@@ -10,7 +10,7 @@ export default function LoginPage() {
   const [pw, setPw] = useState('');
 
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState();
+  const [, setStatus] = useState();
 
   const onChangeId = (e) => {
     setId(e.target.value);
