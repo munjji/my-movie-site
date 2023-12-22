@@ -28,13 +28,10 @@ export default function LoginPage() {
     }
     setLoading(true);
     try {
-      const response = await axios.post(
-        `http://https://main--strong-cactus-7dca36.netlify.app/user/login`,
-        {
-          id,
-          pw,
-        },
-      );
+      const response = await axios.post(`http://localhost:8000/user/login`, {
+        id,
+        pw,
+      });
 
       if (response.status === 200) {
         console.log('성공 : ', response.status);
